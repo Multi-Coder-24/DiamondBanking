@@ -1,5 +1,4 @@
 {
-	"texture_size": [32, 32],
 	"textures": {
 		"0": "diamond_banking:block/white",
 		"1": "diamond_banking:block/red",

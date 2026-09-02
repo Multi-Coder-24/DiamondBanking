@@ -27,7 +27,7 @@ public class PostBoxBlock extends BaseEntityBlock{
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty HAS_POST = BooleanProperty.create("has_post");
     public PostBoxBlock(Properties properties) {
-        super(properties);
+        super(properties.noOcclusion());
     }
 
     @Override

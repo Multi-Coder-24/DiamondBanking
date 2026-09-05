@@ -1,11 +1,8 @@
-package org.multicoder.diamond_banking.data;
+package org.multicoder.diamondbanking.data;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.UUIDUtil;
-import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.network.codec.ByteBufCodecs;
-import net.minecraft.network.codec.StreamCodec;
 
 import java.util.UUID;
 
@@ -17,11 +14,6 @@ public class PlayerAccount {
             Codec.INT.fieldOf("balance").forGetter(PlayerAccount::getBalance),
             UUIDUtil.CODEC.fieldOf("playerID").forGetter(PlayerAccount::getPlayerID)
     ).apply(instance,PlayerAccount::new));
-    public static final StreamCodec<RegistryFriendlyByteBuf,PlayerAccount> STREAM_CODEC = StreamCodec.composite(
-            ByteBufCodecs.INT,PlayerAccount::getBalance,
-            UUIDUtil.STREAM_CODEC,PlayerAccount::getPlayerID,
-            PlayerAccount::new
-    );
 
     public PlayerAccount(int Balance,UUID playerID) {
         this.playerID = playerID;

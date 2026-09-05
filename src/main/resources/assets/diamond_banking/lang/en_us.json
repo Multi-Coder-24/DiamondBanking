@@ -1,4 +1,17 @@
 {
-  "block.diamond_banking.post_box": "Post Box",
-  "block.diamond_banking.atm": "ATM"
+  "text.diamondbanking.teller": "[Bank Teller] ",
+  "text.diamondbanking.economy": "[Diamond Banking] ",
+  "command.diamondbanking.prefix": "Diamond",
+  "command.diamondbanking.economy": "Economy",
+  "command.diamondbanking.pay": "Pay",
+  "command.diamondbanking.process": "Process",
+  "command.diamondbanking.shop": "Shop",
+  "command.diamondbanking.player": "Player",
+  "command.diamondbanking.amount": "Amount",
+  "command.diamondbanking.sign_position": "Sign Position",
+  "command.diamondbanking.chest_position": "Chest Position",
+  "command.diamondbanking.price": "Price",
+  "command.diamondbanking.item": "Item",
+  "command.diamondbanking.name": "Name"
+
 }
